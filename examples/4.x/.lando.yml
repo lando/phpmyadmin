@@ -1,6 +1,6 @@
 name: lando-pma-4
 services:
-  pma_theme:
+  pma:
     type: phpmyadmin:4.7
     hosts:
       - database
