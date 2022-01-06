@@ -13,9 +13,15 @@ services:
     config:
       config: .lando/config.user.inc.php
     build_as_root:
+      - apk --update add openssl wget unzip && rm -rf /var/cache/apk/*
       - chmod +x /app/.lando/pma-theme.sh
       - /app/.lando/pma-theme.sh
   database:
     type: mariadb
   database2:
     type: mariadb
+
+# This is important because it lets lando know to test against the plugin in this repo
+# DO NOT REMOVE THIS!
+plugins:
+  "@lando/phpmyadmin": ./../../
