@@ -1,33 +1,9 @@
 ---
-description: Add a highly configurable phpmyadmin service to Lando for local development with all the power of Docker and Docker Compose; connect all your databases for easy GUI goodness.
+title: Configuration
+description: Learn how to configure the Lando phpMyAdmin service.
 ---
 
-# PhpMyAdmin
-
-[phpMyAdmin](https://www.phpmyadmin.net/) is a free software tool written in PHP, intended to handle the administration of MySQL over the Web.
-
-You can easily add it to your Lando app by adding an entry to the [services](https://docs.lando.dev/config/services.html) top-level config in your [Landofile](https://docs.lando.dev/config/lando.html).
-
-[[toc]]
-
-## Supported versions
-
-*   **[5.1](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)** **(default)**
-*   [5.0](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
-*   [custom](https://docs.lando.dev/config/services.html#advanced)
-
-## Legacy versions
-
-*   [4.9](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
-*   [4.8](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
-*   [4.7](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
-*   [4.6](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
-
-## Patch versions
-
-This service does not support patch versions but if you **really** need something like that, you could consider using either a [custom compose service](./compose.html) or a service [overrides](https://docs.lando.dev/config/services.html#overrides).
-
-## Configuration
+# Configuration
 
 Here are the configuration options, set to the default values, for this service. If you are unsure about where this goes or what this means, we *highly recommend* scanning the [services documentation](https://docs.lando.dev/config/services.html) to get a good handle on how the magicks work.
 
@@ -44,7 +20,7 @@ services:
       environment: SEE BELOW
 ```
 
-### Connecting to database services
+## Connecting to database services
 
 You will need to list the database services you want to be able to access via `phpmyadmin`. Note that the services in this list should be other MySQL-y services in your application. They can be discovered by running [lando info](https://docs.lando.dev/cli/info.html).
 
@@ -67,7 +43,7 @@ services:
     type: mysql:8
 ```
 
-### Using custom phpmyadmin config file
+## Using custom phpmyadmin config file
 
 You can override the default `phpmyadmin` config by setting a custom [phpMyAdmin config file](https://docs.phpmyadmin.net/en/latest/config.html) as shown below:
 
@@ -92,7 +68,7 @@ services:
       config: config/config.user.inc.php
 ```
 
-### Advanced
+## Advanced
 
 There are also [several various envvars](https://hub.docker.com/r/phpmyadmin/phpmyadmin/) exposed by the underlying image we use that you can set to further customize how your PhpMyAdmin works. **These are not officially supported** so we *highly recommend* you do not alter them unless you know what you are doing. Even then, YMMV.
 
@@ -119,5 +95,3 @@ myservice:
 ## Getting information
 
 You can get connection and credential information about your phpmyadmin instance by running [`lando info`](https://docs.lando.dev/cli/info.html). It may also be worth checking out our [accessing services externally guide](https://docs.lando.dev/guides/external-access.html).
-
-<RelatedGuides tag="PhpMyAdmin"/>
