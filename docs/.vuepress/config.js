@@ -27,23 +27,23 @@ module.exports = {
     sidebar: [
       {
         text: 'Getting Started',
-        link: '/index.md',
+        link: '/index.html',
       },
-      '/config.md',
+      '/config.html',
       {
         text: 'Guides',
         collapsible: true,
         children: [
           {
             text: 'Using a custom PhpMyAdmin 4.x theme in Lando',
-            link: '/phpmyadmin-themes.md',
+            link: '/phpmyadmin-themes.html',
           },
         ],
       },
-      '/support.md',
+      '/support.html',
       {text: 'Examples', link: 'https://github.com/lando/phpmyadmin/tree/main/examples'},
       {text: 'Release Notes', link: 'https://github.com/lando/phpmyadmin/releases'},
-      '/development.md',
+      '/development.html',
     ],
   },
 };
