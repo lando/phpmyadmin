@@ -1,6 +1,7 @@
 ---
 title: phpMyAdmin Lando Plugin
 description: Add a highly configurable phpmyadmin service to Lando for local development with all the power of Docker and Docker Compose; connect all your databases for easy GUI goodness.
+next: ./config.html
 ---
 
 # phpMyAdmin
