@@ -46,12 +46,12 @@ However if you would like to manually install the plugin, update it to the bleed
 mkdir -p ~/.lando/plugins
 
 # Install plugin
-# NOTE: Modify the "yarn add @lando/phpmyadmin" line to install a particular version eg
-# yarn add @lando/phpmyadmin@0.5.2
+# NOTE: Modify the "npm install @lando/phpmyadmin" line to install a particular version eg
+# npm install @lando/phpmyadmin@0.5.2
 docker run --rm -it -v ${HOME}/.lando/plugins:/plugins -w /tmp node:14-alpine sh -c \
-  "yarn init -y \
-  && yarn add @lando/phpmyadmin --production --flat --no-default-rc --no-lockfile --link-duplicates \
-  && yarn install --production --cwd /tmp/node_modules/@lando/phpmyadmin \
+  "npm init -y \
+  && npm install @lando/phpmyadmin --production --flat --no-default-rc --no-lockfile --link-duplicates \
+  && npm install --production --cwd /tmp/node_modules/@lando/phpmyadmin \
   && mkdir -p /plugins/@lando \
   && mv --force /tmp/node_modules/@lando/phpmyadmin /plugins/@lando/phpmyadmin"
 
