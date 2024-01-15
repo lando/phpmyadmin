@@ -1,0 +1,14 @@
+{
+  "name": "5.x",
+  "version": "1.0.0",
+  "description": "PhpMyAdmin Example ==================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@lando/mariadb": "^1.0.0"
+  }
+}
