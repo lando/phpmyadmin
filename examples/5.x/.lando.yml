@@ -27,4 +27,4 @@ services:
 # DO NOT REMOVE THIS!
 plugins:
   "@lando/phpmyadmin": ./../../
-  "@lando/mariadb": ./../../node_modules/@lando/mariadb
+  "@lando/mariadb": ./node_modules/@lando/mariadb

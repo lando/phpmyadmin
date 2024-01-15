@@ -11,6 +11,11 @@ Start up tests
 Run the following commands to get up and running with this example.
 
 ```bash
+# Should install Lando plugin dependency.
+npm ci
+```
+
+```bash
 # Should start up successfully
 lando poweroff
 lando start
