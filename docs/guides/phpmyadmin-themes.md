@@ -13,6 +13,8 @@ mailchimp:
   button: Sign me up!
 ---
 
+# Using a Custom PHPMyAdmin 4.x Theme in Lando
+
 [phpMyAdmin](https://www.phpmyadmin.net/) is a free software tool written in PHP, intended to handle the administration of MySQL over the Web. See the [lando docs](https://docs.lando.dev/phpmyadmin) regarding phpMyAdmin for help enabling the service.
 
 :::warning Only for PhpMyAdmin 4.x
