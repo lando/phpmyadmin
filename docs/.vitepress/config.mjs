@@ -51,6 +51,7 @@ function sidebar() {
         {text: 'Contact Us', link: '/support'},
       ],
     },
+    {text: 'Guides', link: '/guides', activeMatch: '/guides'},
     {text: 'Examples', link: 'https://github.com/lando/phpmyadmin/tree/main/examples'},
   ];
 };

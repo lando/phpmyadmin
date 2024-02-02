@@ -5,7 +5,7 @@ description: Learn how to develop and contribute to the Lando Phpmyadmin service
 
 # Development
 
-This guide contains information to help onboard developers to work on the [phpmyadmin](https://phpmyadmin.microsoft.com/en-us/) integration, hereafter referred to as *the plugin*.
+This guide contains information to help onboard developers to work on the [phpmyadmin](https://www.phpmyadmin.net/) integration, hereafter referred to as *the plugin*.
 
 ## Requirements
 
