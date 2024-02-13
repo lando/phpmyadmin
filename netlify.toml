@@ -39,9 +39,9 @@
 # We need this so preview environments and the base site look ok on their own
 [[redirects]]
   from = "/"
-  to = "/phpmyadmin"
+  to = "/plugins/phpmyadmin"
   status = 200
 [[redirects]]
-  from = "/phpmyadmin/*"
+  from = "/plugins/phpmyadmin/*"
   to = "/:splat"
   status = 200
