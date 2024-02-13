@@ -15,7 +15,7 @@ mailchimp:
 
 # Using a Custom PHPMyAdmin 4.x Theme in Lando
 
-[phpMyAdmin](https://www.phpmyadmin.net/) is a free software tool written in PHP, intended to handle the administration of MySQL over the Web. See the [lando docs](https://docs.lando.dev/phpmyadmin) regarding phpMyAdmin for help enabling the service.
+[phpMyAdmin](https://www.phpmyadmin.net/) is a free software tool written in PHP, intended to handle the administration of MySQL over the Web. See the [lando docs](https://docs.lando.dev/plugins/phpmyadmin) regarding phpMyAdmin for help enabling the service.
 
 :::warning Only for PhpMyAdmin 4.x
 Note that this guide is only applicable to the 4.x branch of PhpMyAdmin. You'll want to consult the docs for how to do this in 5.x
@@ -60,7 +60,7 @@ Checkout the available themes [here](https://www.phpmyadmin.net/themes/). Make s
 
 ## Set new theme as the default
 
-Review the [phpMyAdmin docs](https://docs.lando.dev/phpmyadmin) to see how to hook up your config file.
+Review the [phpMyAdmin docs](https://docs.lando.dev/plugins/phpmyadmin) to see how to hook up your config file.
 
 Add this line to your config:
 
