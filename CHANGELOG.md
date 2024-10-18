@@ -1,5 +1,7 @@
 ## {{ UNRELEASED_VERSION }} - [{{ UNRELEASED_DATE }}]({{ UNRELEASED_LINK }})
 
+## v1.2.1 - [October 18, 2024](https://github.com/lando/phpmyadmin/releases/tag/v1.2.1)
+
 * Removed mistakenly added lando/php.
 
 ## v1.2.0 - [October 18, 2024](https://github.com/lando/phpmyadmin/releases/tag/v1.2.0)
