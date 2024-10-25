@@ -1,5 +1,7 @@
 ## {{ UNRELEASED_VERSION }} - [{{ UNRELEASED_DATE }}]({{ UNRELEASED_LINK }})
 
+* Updated release process to generate an edge release when stable releases are created.
+
 ## v1.2.1 - [October 18, 2024](https://github.com/lando/phpmyadmin/releases/tag/v1.2.1)
 
 * Removed mistakenly added lando/php.
