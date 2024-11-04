@@ -46,6 +46,8 @@ module.exports = {
       };
       // Add some info
       options.info = {backends: options.hosts};
+      options.ssl = true;
+      options.sslExpose = false;
       // Send it downstream
       super(id, options, {services: _.set({}, options.name, pma)});
     };
