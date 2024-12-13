@@ -19,6 +19,9 @@ export default defineConfig({
     ['link', {rel: 'icon', href: '/phpmyadmin/favicon.svg', type: 'image/svg+xml'}],
   ],
   themeConfig: {
+    multiVersionBuild: {
+      satisfies: '>=1.0.0',
+    },
     sidebar: sidebar(),
   },
 });
@@ -49,9 +52,9 @@ function sidebar() {
         {text: 'GitHub', link: 'https://github.com/lando/phpmyadmin/issues/new/choose'},
         {text: 'Slack', link: 'https://www.launchpass.com/devwithlando'},
         {text: 'Contact Us', link: '/support'},
+        {text: 'Examples', link: 'https://github.com/lando/phpmyadmin/tree/main/examples'},
       ],
     },
     {text: 'Guides', link: '/guides', activeMatch: '/guides'},
-    {text: 'Examples', link: 'https://github.com/lando/phpmyadmin/tree/main/examples'},
   ];
 };

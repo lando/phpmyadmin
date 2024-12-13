@@ -1,3 +1,33 @@
+## {{ UNRELEASED_VERSION }} - [{{ UNRELEASED_DATE }}]({{ UNRELEASED_LINK }})
+
+## v1.3.3 - [December 6, 2024](https://github.com/lando/phpmyadmin/releases/tag/v1.3.3)
+
+* Updated the version index.md to get Docuverse page to build correctly.
+
+## v1.3.2 - [December 4, 2024](https://github.com/lando/phpmyadmin/releases/tag/v1.3.2)
+
+* Updated to [@lando/vitepress-theme-default-plus@v1.1.0-beta.24](https://github.com/lando/vitepress-theme-default-plus/releases/tag/v1.1.0-beta.24).
+
+## v1.3.1 - [November 4, 2024](https://github.com/lando/phpmyadmin/releases/tag/v1.3.1)
+
+* Updated to [@lando/vitepress-theme-default-plus@v1.1.0-beta.18](https://github.com/lando/vitepress-theme-default-plus/releases/tag/v1.1.0-beta.18).
+
+## v1.3.0 - [October 25, 2024](https://github.com/lando/phpmyadmin/releases/tag/v1.3.0)
+
+* Updated release process to generate an edge release when stable releases are created.
+
+## v1.2.1 - [October 18, 2024](https://github.com/lando/phpmyadmin/releases/tag/v1.2.1)
+
+* Removed mistakenly added lando/php.
+
+## v1.2.0 - [October 18, 2024](https://github.com/lando/phpmyadmin/releases/tag/v1.2.0)
+
+* Updated lando/php to v1.5.0.
+
+## v1.1.0 - [March 8, 2024](https://github.com/lando/phpmyadmin/releases/tag/v1.1.0)
+
+* Updated to latest database services.
+
 ## v1.0.0 - [December 7, 2023](https://github.com/lando/phpmyadmin/releases/tag/v1.0.0)
 
 * Dialed fully for `lando update`
