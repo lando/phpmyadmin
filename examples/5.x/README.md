@@ -40,7 +40,7 @@ lando ssh -s pma -c "env | grep PMA_HOSTS=database,database2"
 lando ssh -s pma_theme -c "env | grep PMA_HOSTS=database,database2"
 
 # Should have set a custom config file if specified
-lando ssh -s pma_theme -c "cat /etc/phpmyadmin/config.user.inc.php" | grep ThemeDefault | grep pmaterial
+lando ssh -s pma_theme -c "cat /etc/phpmyadmin/config.user.inc.php | grep ThemeDefault | grep pmaterial"
 ```
 
 Destroy tests
