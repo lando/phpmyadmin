@@ -1,5 +1,9 @@
 ## {{ UNRELEASED_VERSION }} - [{{ UNRELEASED_DATE }}]({{ UNRELEASED_LINK }})
 
+## v1.4.0 - [February 3, 2024](https://github.com/lando/phpmyadmin/releases/tag/v1.4.0)
+
+* Updated to include PHPMyAdmin 5.2.1 [#39](https://github.com/lando/phpmyadmin/pull/39). 
+
 ## v1.3.3 - [December 6, 2024](https://github.com/lando/phpmyadmin/releases/tag/v1.3.3)
 
 * Updated the version index.md to get Docuverse page to build correctly.
