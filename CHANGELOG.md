@@ -1,5 +1,7 @@
 ## {{ UNRELEASED_VERSION }} - [{{ UNRELEASED_DATE }}]({{ UNRELEASED_LINK }})
 
+## v1.4.1 - [February 5, 2025](https://github.com/lando/phpmyadmin/releases/tag/v1.4.1)
+
 * Reverted default version from 5.2 to 5.1 [#52](https://github.com/lando/phpmyadmin/issues/52)
 
 ## v1.4.0 - [February 3, 2025](https://github.com/lando/phpmyadmin/releases/tag/v1.4.0)
