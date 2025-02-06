@@ -1,5 +1,6 @@
 ## {{ UNRELEASED_VERSION }} - [{{ UNRELEASED_DATE }}]({{ UNRELEASED_LINK }})
 
+* Changed builder to enable ssl for proxy urls by default
 * Changed builder to always use latest patch version of `phpmyadmin`
 * Improved automated tests to check installed version of `phpmyadmin`
 
