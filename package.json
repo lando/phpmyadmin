@@ -44,11 +44,11 @@
   },
   "dependencies": {
     "lodash": "^4.17.21",
-    "semver": "^7.3.2"
+    "semver": "^7.7.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.0",
-    "@lando/leia": "^0.6.5",
+    "@lando/leia": "^1.0.0-beta.4",
     "@lando/vitepress-theme-default-plus": "^1.1.0-beta.24",
     "chai": "^4.3.4",
     "command-line-test": "^1.0.10",

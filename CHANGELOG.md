@@ -1,5 +1,8 @@
 ## {{ UNRELEASED_VERSION }} - [{{ UNRELEASED_DATE }}]({{ UNRELEASED_LINK }})
 
+* Changed builder to always use latest patch version of `phpmyadmin`
+* Improved automated tests to check installed version of `phpmyadmin`
+
 ## v1.4.1 - [February 5, 2025](https://github.com/lando/phpmyadmin/releases/tag/v1.4.1)
 
 * Reverted default version from 5.2 to 5.1 [#52](https://github.com/lando/phpmyadmin/issues/52)

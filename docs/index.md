@@ -8,19 +8,20 @@ next: ./config.html
 
 [phpMyAdmin](https://www.phpmyadmin.net/) is a free software tool written in PHP, intended to handle the administration of MySQL over the Web.
 
-You can easily add it to your Lando app by adding an entry to the [services](https://docs.lando.dev/core/v3/services/lando.html) top-level config in your [Landofile](https://docs.lando.dev/core/v3).
+You can easily add it to your Lando app by adding an entry to the [services](https://docs.lando.dev/services/lando-3.html) top-level config in your [Landofile](https://docs.lando.dev/landofile).
 
 ```yaml
 services:
   myservice:
-    type: phpmyadmin
+    type: phpmyadmin:5.2
 ```
 
 ## Supported versions
 
+*   [5.2](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)**
 *   **[5.1](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)** **(default)**
 *   [5.0](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
-*   [custom](https://docs.lando.dev/core/v3/services/lando.html#overrides)
+*   [custom](https://docs.lando.dev/services/lando-3.html#overrides)
 
 ## Legacy versions
 
@@ -31,5 +32,5 @@ services:
 
 ## Patch versions
 
-This service does not support patch versions but if you **really** need something like that, you could consider using either a [custom compose service](https://docs.lando.dev/plugins/compose) or a service [overrides](https://docs.lando.dev/core/v3/services/lando.html#overrides).
+This service does not support patch versions but if you **really** need something like that, you could consider using either a [custom compose service](https://docs.lando.dev/plugins/compose) or a service [overrides](https://docs.lando.dev/services/lando-3.html#overrides).
 
