@@ -1,5 +1,10 @@
 name: lando-pma
 services:
+  defaults:
+    type: phpmyadmin
+    hosts:
+      - database
+      - database2
   pma:
     type: phpmyadmin:5.2
     hosts:
