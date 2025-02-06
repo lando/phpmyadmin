@@ -3,6 +3,7 @@
 // Modules
 const _ = require('lodash');
 const semver = require('semver');
+const setConfigOptions = require('../utils/setConfigOptions');
 
 // Builder
 module.exports = {
@@ -17,17 +18,22 @@ module.exports = {
     remoteFiles: {
       config: '/etc/phpmyadmin/config.user.inc.php',
     },
+    ssl: true,
+    sslExpose: false,
   },
-  parent: '_lando',
-  builder: (parent, config) => class LandoPma extends parent {
-    constructor(id, options = {}) {
-      options = _.merge({}, config, options);
+  parent: '_service',
+  builder: (parent, optionDefaults) => class LandoPma extends parent {
+    constructor(id, userConfig = {}) {
+      // Merge the user config onto the default config
+      const options = _.merge({}, optionDefaults, userConfig);
+
       // Arrayify the hosts if needed
       if (!_.isArray(options.hosts)) options.hosts = [options.hosts];
       // Switch to legacy command if needed
       if (semver.lt(`${options.version}.0`, '5.0.0')) options.command = '/run.sh phpmyadmin';
-      // Build the default stuff here
-      const pma = {
+
+      // Assemble the service config
+      const pmaService = {
         image: `phpmyadmin/phpmyadmin:${options.version}`,
         environment: {
           MYSQL_ROOT_PASSWORD: '',
@@ -42,10 +48,15 @@ module.exports = {
       };
       // Add some info
       options.info = {backends: options.hosts};
-      options.ssl = true;
-      options.sslExpose = false;
-      // Send it downstream
-      super(id, options, {services: _.set({}, options.name, pma)});
+
+      // Set configuration options for the upstream Lando service
+      setConfigOptions({
+        ssl: options.ssl,
+        sslExpose: options.sslExpose,
+      }, options._app, options.name);
+
+      // Add in the service and push it downstream
+      super(id, options, {services: _.set({}, options.name, pmaService)});
     };
   },
 };
