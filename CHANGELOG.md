@@ -1,5 +1,7 @@
 ## {{ UNRELEASED_VERSION }} - [{{ UNRELEASED_DATE }}]({{ UNRELEASED_LINK }})
 
+* Changed builder to enable ssl for proxy urls by default
+
 ## v1.4.2 - [February 7, 2025](https://github.com/lando/phpmyadmin/releases/tag/v1.4.2)
 
 * Changed builder to always use latest patch version of `phpmyadmin`
