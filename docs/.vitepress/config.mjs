@@ -8,8 +8,8 @@ const {name, version} = require('../../package.json');
 const landoPlugin = name.replace('@lando/', '');
 
 export default defineConfig({
-  title: 'Lando Phpmyadmin Plugin',
-  description: 'The offical Lando plugin for Phpmyadmin.',
+  title: 'Lando phpMyAdmin Plugin',
+  description: 'The offical Lando plugin for phpMyAdmin.',
   landoDocs: 3,
   landoPlugin,
   version,

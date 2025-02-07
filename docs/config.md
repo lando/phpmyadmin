@@ -12,7 +12,7 @@ Also note that options, in addition to the [build steps](https://docs.lando.dev/
 ```yaml
 services:
   myservice:
-    type: phpmyadmin:5.1
+    type: phpmyadmin:5.2
     hosts: []
     config:
       config: SEE BELOW

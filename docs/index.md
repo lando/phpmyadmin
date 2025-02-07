@@ -18,8 +18,8 @@ services:
 
 ## Supported versions
 
-*   [5.2](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)**
-*   **[5.1](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)** **(default)**
+*   [5.2](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
+*   [5.1](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
 *   [5.0](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
 *   [custom](https://docs.lando.dev/services/lando-3.html#overrides)
 
