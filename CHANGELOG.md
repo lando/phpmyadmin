@@ -1,5 +1,7 @@
 ## {{ UNRELEASED_VERSION }} - [{{ UNRELEASED_DATE }}]({{ UNRELEASED_LINK }})
 
+## v1.5.0 - [April 25, 2025](https://github.com/lando/phpmyadmin/releases/tag/v1.5.0)
+
 * Changed builder to enable ssl for proxy urls by default
 
 ## v1.4.2 - [February 7, 2025](https://github.com/lando/phpmyadmin/releases/tag/v1.4.2)
