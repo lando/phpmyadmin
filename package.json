@@ -3,7 +3,7 @@
   "description": "A Lando plugin that provides a tight integration with phpMyAdmin.",
   "version": "1.5.0",
   "author": "Mike Pirog @pirog",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "repository": "lando/phpmyadmin",
   "bugs": "https://github.com/lando/phpmyadmin/issues/new/choose",
   "homepage": "https://github.com/lando/phpmyadmin",
