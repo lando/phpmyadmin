@@ -22,8 +22,12 @@ jobs:
         run: |
           VERSION=$(echo "$TAG_NAME" | sed 's/^v//')
           PACKAGE=$(node -p "require('./package.json').name")
-          npm dist-tag add "$PACKAGE@$VERSION" latest
-          echo "::notice title=Promoted $VERSION to latest::The latest tag now points to $VERSION (was edge-only)"
+          if npm view "$PACKAGE@$VERSION" version &>/dev/null; then
+            npm dist-tag add "$PACKAGE@$VERSION" latest
+            echo "::notice title=Promoted $VERSION to latest::The latest tag now points to $VERSION (was edge-only)"
+          else
+            echo "::notice title=Skipping promotion::Version $VERSION not yet published to npm, skipping dist-tag operation"
+          fi
         env:
           TAG_NAME: ${{ github.event.release.tag_name }}
           NODE_AUTH_TOKEN: ${{secrets.NPM_DEPLOY_TOKEN}}
