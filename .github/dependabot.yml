@@ -6,6 +6,24 @@ updates:
       interval: "daily"
     allow:
       - dependency-name: "@lando/*"
+  - package-ecosystem: "npm"
+    directory: "/examples/4.x"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "@lando/*"
+  - package-ecosystem: "npm"
+    directory: "/examples/5.x"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "@lando/*"
+  - package-ecosystem: "npm"
+    directory: "/examples/mysql"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "@lando/*"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
