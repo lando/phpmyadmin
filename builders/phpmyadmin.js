@@ -34,7 +34,7 @@ module.exports = {
 
       // Assemble the service config
       const pmaService = {
-        image: `phpmyadmin/phpmyadmin:${options.version}`,
+        image: `phpmyadmin:${options.version}`,
         environment: {
           MYSQL_ROOT_PASSWORD: '',
           PMA_HOSTS: options.hosts.join(','),

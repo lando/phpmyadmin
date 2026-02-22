@@ -18,17 +18,17 @@ services:
 
 ## Supported versions
 
-*   [5.2](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
-*   [5.1](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
-*   [5.0](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
+*   [5.2](https://hub.docker.com/_/phpmyadmin)
+*   [5.1](https://hub.docker.com/_/phpmyadmin)
+*   [5.0](https://hub.docker.com/_/phpmyadmin)
 *   [custom](https://docs.lando.dev/services/lando-3.html#overrides)
 
 ## Legacy versions
 
-*   [4.9](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
-*   [4.8](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
-*   [4.7](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
-*   [4.6](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
+*   [4.9](https://hub.docker.com/_/phpmyadmin)
+*   [4.8](https://hub.docker.com/_/phpmyadmin)
+*   [4.7](https://hub.docker.com/_/phpmyadmin)
+*   [4.6](https://hub.docker.com/_/phpmyadmin)
 
 ## Patch versions
 
