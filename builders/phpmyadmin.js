@@ -32,9 +32,15 @@ module.exports = {
       // Switch to legacy command if needed
       if (semver.lt(`${options.version}.0`, '5.2.0')) options.command = '/run.sh phpmyadmin';
 
+      // Use official image for 5.x+, legacy image for 4.x
+      const isLegacy = semver.lt(`${options.version}.0`, '5.0.0');
+      const image = isLegacy
+        ? `phpmyadmin/phpmyadmin:${options.version}`
+        : `phpmyadmin:${options.version}`;
+
       // Assemble the service config
       const pmaService = {
-        image: `phpmyadmin:${options.version}`,
+        image,
         environment: {
           MYSQL_ROOT_PASSWORD: '',
           PMA_HOSTS: options.hosts.join(','),
