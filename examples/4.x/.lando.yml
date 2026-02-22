@@ -12,9 +12,9 @@ services:
       - chmod +x /app/.lando/pma-theme.sh
       - /app/.lando/pma-theme.sh
   database:
-    type: mariadb
+    type: mariadb:10.6
   database2:
-    type: mariadb
+    type: mariadb:10.11
 
 # This is important because it lets lando know to test against the plugin in this repo
 # DO NOT REMOVE THIS!

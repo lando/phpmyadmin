@@ -1,0 +1,14 @@
+name: lando-pma-mysql
+services:
+  pma:
+    type: phpmyadmin:5.2
+    hosts:
+      - database
+  database:
+    type: mysql:8.4
+
+# This is important because it lets lando know to test against the plugin in this repo
+# DO NOT REMOVE THIS!
+plugins:
+  "@lando/phpmyadmin": ./../../
+  "@lando/mysql": ./node_modules/@lando/mysql

@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@lando/mariadb": "^1.0.0"
+    "@lando/mariadb": "^1.6.3"
   }
 }

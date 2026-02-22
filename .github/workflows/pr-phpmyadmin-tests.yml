@@ -13,6 +13,7 @@ jobs:
         leia-test:
           - examples/4.x
           - examples/5.x
+          - examples/mysql
         lando-version:
           - 3-edge-slim
         os:
