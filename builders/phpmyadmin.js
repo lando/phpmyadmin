@@ -29,11 +29,14 @@ module.exports = {
 
       // Arrayify the hosts if needed
       if (!_.isArray(options.hosts)) options.hosts = [options.hosts];
+      
+      // Determine if this is a legacy version (< 5.0.0)
+      const isLegacy = semver.lt(`${options.version}.0`, '5.0.0');
+      
       // Switch to legacy command if needed
-      if (semver.lt(`${options.version}.0`, '5.0.0')) options.command = '/run.sh phpmyadmin';
+      if (isLegacy) options.command = '/run.sh phpmyadmin';
 
       // Use official image for 5.x+, legacy image for 4.x
-      const isLegacy = semver.lt(`${options.version}.0`, '5.0.0');
       const image = isLegacy
         ? `phpmyadmin/phpmyadmin:${options.version}`
         : `phpmyadmin:${options.version}`;
