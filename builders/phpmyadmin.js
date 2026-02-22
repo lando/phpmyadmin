@@ -29,10 +29,10 @@ module.exports = {
 
       // Arrayify the hosts if needed
       if (!_.isArray(options.hosts)) options.hosts = [options.hosts];
-      
+
       // Determine if this is a legacy version (< 5.0.0)
       const isLegacy = semver.lt(`${options.version}.0`, '5.0.0');
-      
+
       // Switch to legacy command if needed
       if (isLegacy) options.command = '/run.sh phpmyadmin';
 
