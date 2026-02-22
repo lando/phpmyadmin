@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@lando/mariadb": "^1.6.3",
-    "@lando/mysql": "^1.5.0"
+    "@lando/mariadb": "^1.8.0",
+    "@lando/mysql": "^1.6.0"
   }
 }
