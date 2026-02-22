@@ -30,7 +30,7 @@ module.exports = {
       // Arrayify the hosts if needed
       if (!_.isArray(options.hosts)) options.hosts = [options.hosts];
       // Switch to legacy command if needed
-      if (semver.lt(`${options.version}.0`, '5.0.0')) options.command = '/run.sh phpmyadmin';
+      if (semver.lt(`${options.version}.0`, '5.2.0')) options.command = '/run.sh phpmyadmin';
 
       // Assemble the service config
       const pmaService = {
