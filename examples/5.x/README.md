@@ -43,9 +43,9 @@ lando exec defaults -- env | grep PMA_HOSTS=database,database2
 lando exec pma -- env | grep PMA_HOSTS=database,database2
 lando exec pma_theme -- env | grep PMA_HOSTS=database,database2
 
-# Should have both database servers configured in PMA config
-lando exec pma -- cat /etc/phpmyadmin/config.inc.php | grep -q "database"
-lando exec pma -- cat /etc/phpmyadmin/config.inc.php | grep -q "database2"
+# Should be able to connect to both database hosts from PMA
+lando exec pma -- php -r "require '/etc/phpmyadmin/config.inc.php'; echo \$cfg['Servers'][1]['host'];" | grep -q "database"
+lando exec pma -- php -r "require '/etc/phpmyadmin/config.inc.php'; echo \$cfg['Servers'][2]['host'];" | grep -q "database2"
 
 # Should be version 5.1.x
 lando exec defaults -- curl -s localhost | grep -oP '<span class="version">\K[^<]+' | tee >(cat 1>&2) | grep -q '5.1.'
