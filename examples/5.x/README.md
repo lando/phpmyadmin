@@ -32,14 +32,20 @@ lando exec defaults -- curl -I localhost | grep 200 | grep OK
 lando exec pma -- curl -I localhost | grep 200 | grep OK
 lando exec pma_theme -- curl -I localhost | grep 200 | grep OK
 
-# Should have databases that work correctly
+# Should have mariadb database that works correctly
 lando exec database -- mysql -umariadb -pmariadb database -e quit
-lando exec database2 -- mysql -umariadb -pmariadb database -e quit
+
+# Should have mysql database that works correctly
+lando exec database2 -- mysql -umysql -pmysql database -e quit
 
 # Should have our databases hooked up to PMA
 lando exec defaults -- env | grep PMA_HOSTS=database,database2
 lando exec pma -- env | grep PMA_HOSTS=database,database2
 lando exec pma_theme -- env | grep PMA_HOSTS=database,database2
+
+# Should be able to connect to both database hosts from PMA
+lando exec pma -- curl -s localhost | grep -q "database"
+lando exec pma -- curl -s localhost | grep -q "database2"
 
 # Should be version 5.1.x
 lando exec defaults -- curl -s localhost | grep -oP '<span class="version">\K[^<]+' | tee >(cat 1>&2) | grep -q '5.1.'
