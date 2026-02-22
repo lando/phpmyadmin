@@ -11,4 +11,4 @@ services:
 # DO NOT REMOVE THIS!
 plugins:
   "@lando/phpmyadmin": ./../../
-  "@lando/mysql": ./../../node_modules/@lando/mysql
+  "@lando/mysql": ./node_modules/@lando/mysql
