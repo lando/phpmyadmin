@@ -25,10 +25,10 @@ services:
 
 ## Legacy versions
 
-*   [4.9](https://hub.docker.com/_/phpmyadmin)
-*   [4.8](https://hub.docker.com/_/phpmyadmin)
-*   [4.7](https://hub.docker.com/_/phpmyadmin)
-*   [4.6](https://hub.docker.com/_/phpmyadmin)
+*   [4.9](https://hub.docker.com/r/phpmyadmin/phpmyadmin)
+*   [4.8](https://hub.docker.com/r/phpmyadmin/phpmyadmin)
+*   [4.7](https://hub.docker.com/r/phpmyadmin/phpmyadmin)
+*   [4.6](https://hub.docker.com/r/phpmyadmin/phpmyadmin)
 
 ## Patch versions
 
