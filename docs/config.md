@@ -70,7 +70,7 @@ services:
 
 ## Advanced
 
-There are also [several various envvars](https://hub.docker.com/r/phpmyadmin/phpmyadmin/) exposed by the underlying image we use that you can set to further customize how your PhpMyAdmin works. **These are not officially supported** so we *highly recommend* you do not alter them unless you know what you are doing. Even then, YMMV.
+There are also [several various envvars](https://hub.docker.com/_/phpmyadmin) exposed by the underlying image we use that you can set to further customize how your PhpMyAdmin works. **These are not officially supported** so we *highly recommend* you do not alter them unless you know what you are doing. Even then, YMMV.
 
 That said, you will need to use a [service override](https://docs.lando.dev/services/lando-3.html#overrides) to take advantage of them as shown below:
 

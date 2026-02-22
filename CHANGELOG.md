@@ -1,5 +1,6 @@
 ## {{ UNRELEASED_VERSION }} - [{{ UNRELEASED_DATE }}]({{ UNRELEASED_LINK }})
 
+* Switched to official `phpmyadmin` Docker image for arm64/Apple Silicon support [#61](https://github.com/lando/phpmyadmin/issues/61)
 * Updated `vite` from 5.4.20 to 5.4.21
 * Updated `mdast-util-to-hast` from 13.2.0 to 13.2.1
 * Updated `lodash-es` from 4.17.21 to 4.17.23
