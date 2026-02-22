@@ -34,7 +34,7 @@ module.exports = {
 
       // Assemble the service config
       const pmaService = {
-        image: `phpmyadmin:${options.version}`,
+        image: semver.lt(`${options.version}.0`, '5.0.0') ? `phpmyadmin/phpmyadmin:${options.version}` : `phpmyadmin:${options.version}`,
         environment: {
           MYSQL_ROOT_PASSWORD: '',
           PMA_HOSTS: options.hosts.join(','),
