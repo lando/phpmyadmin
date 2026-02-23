@@ -1,5 +1,7 @@
 ## {{ UNRELEASED_VERSION }} - [{{ UNRELEASED_DATE }}]({{ UNRELEASED_LINK }})
 
+## v1.6.0 - [February 23, 2026](https://github.com/lando/phpmyadmin/releases/tag/v1.6.0)
+
 * Switched to official `phpmyadmin` Docker image for arm64/Apple Silicon support [#61](https://github.com/lando/phpmyadmin/issues/61)
 * Modernized example tests with pinned database versions and added MySQL test coverage
 * Updated `@lando/mariadb` test dependency to ^1.8.0
